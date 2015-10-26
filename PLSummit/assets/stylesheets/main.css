@@ -116,7 +116,7 @@ a:active {
 h1, h2 {
     color: orange;
     text-align: center;
-    padding: 10px 5px;
+    padding: 25px 5px 10px 5px;
     line-height: 150%;
     font-size:16px;
 }
