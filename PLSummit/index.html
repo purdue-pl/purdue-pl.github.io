@@ -192,8 +192,26 @@ data types, and combines these predicates within an expressive first-order speci
 <p>Lambda encodings represent familiar datatypes like numbers, lists, and trees as pure lambda-calculus terms.  Numerous obstacles prevented lambda encodings from being adopted in proof assistants based on type theory; instead, such tools add systems of primitive inductive datatypes to the core lambda calculus.  In this talk, I will show solutions -- one old and several new -- to the problems with lambda encodings in type theory.  This opens the possibility of basing proof assistants on pure lambda calculus only.  One benefit of this is support for higher-order encodings, for data with binders (such as expressions in programming languages).</p>
 
 <hr>
-<b>Effect of GC on Android Power Management</b>
+<b>Trading Performance and Responsiveness for Energy on Android Devices</b>
 <br><i>Ahmed Hussein, Purdue University</i><br><br>
+
+<p>Mobile devices must conserve power while still providing the desired
+responsiveness and throughput. This offers new dimensions for the evaluation of
+the Virtual Machine (VM) for devices that rely on a managed run-time. These 
+dimensions offer not just the usual tradeoffs, but also a "free lunch" where the
+energy cost of garbage collection (GC) can be lowered with minimal impact on
+throughput and responsiveness. </p><br>
+  <p>We achieve this with a new GC-aware frequency scaling governor for Android 
+devices. We also explore the tradeoffs of power and performance in vivo for a 
+range of realistic GC variants, with established benchmarks and real 
+applications running on Android virtual machines. We control for variation due 
+to dynamic voltage and frequency scaling (DVFS), JIT compilation, and across 
+established dimensions of heap memory size and concurrency. </p><br>
+  <p>Our results reveal that significant energy is consumed by Android’s GC thread, 
+and that varying GC strategy can reduce total on-chip energy (by 20–30 %), 
+application throughput (by 10–40%), or worst-case pause times (by 20–30 %). We 
+also show that integration between GC and power mechanisms is more effective in 
+controlling the impact of GC than standard techniques such as heap resizing.</p>
 
 <hr>
 <b>Declarative Programming over Eventually Consistent Data Stores</b>
